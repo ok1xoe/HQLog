@@ -1,0 +1,87 @@
+if Value='0' then
+  Value:='CW';
+end if;
+if Value='1' then
+  Value:='SSB';
+end if;
+if Value='2' then
+  Value:='AM';
+end if;
+if Value='3' then
+  Value:='FM';
+end if;
+if Value='4' then
+  Value:='SAT';
+end if;
+if Value='5' then
+  Value:='SSTV';
+end if;
+if Value='6' then
+  Value:='FAX';
+end if;
+if Value='7' then
+  Value:='ATV';
+end if;
+if Value='8' then
+  Value:='RTTY';
+end if;
+if Value='9' then
+  Value:='MINIRTTY';
+end if;
+if Value='10' then
+  Value:='HELL';
+end if;
+if Value='11' then
+  Value:='PSK31';
+end if;
+if Value='12' then
+  Value:='PSK125';
+end if;
+if Value='13' then
+  Value:='PSK63';
+end if;
+if Value='14' then
+  Value:='FSK';
+end if;
+if Value='15' then
+  Value:='FSK31';
+end if;
+if Value='16' then
+  Value:='HFSK';
+end if;
+if Value='17' then
+  Value:='MFSK8';
+end if;
+if Value='18' then
+  Value:='MFSK16';
+end if;
+if Value='19' then
+  Value:='AMTOR';
+end if;
+if Value='20' then
+  Value:='PACTOR';
+end if;
+if Value='21' then
+  Value:='GTOR';
+end if;
+if Value='22' then
+  Value:='PACKET';
+end if;
+if Value='23' then
+  Value:='CLOVER';
+end if;
+if Value='24' then
+  Value:='JT6';
+end if;
+if Value='25' then
+  Value:='MT63';
+end if;
+if Value='26' then
+  Value:='Q15';
+end if;
+if Value='27' then
+  Value:='QRS';
+end if;
+if Value='28' then
+  Value:='THROB';
+end if;

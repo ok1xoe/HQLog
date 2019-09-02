@@ -1,0 +1,102 @@
+První verze: 0.5 beta
+---------------------
+0.5.1 beta
+opravy:
+- opravena chyba pøi zápisu do registru ve Windows 2000 a XP
+- zamezeno vícenásobnému spuštìní programu
+- opraveno vkládání a zobrazování data a èasu na formuláøi nového QSO
+- opraven tisk èeských znakù
+- opraveno mnoho dalších menších (i vìtších) chyb 
+vylepšení:
+- pøidáno tlaèítko pro vložení aktuálního data a èasu do nového spojení
+- pøidána možnost rychlého zadávání spojení
+  (lze definovat položky, které se nebudou vyplòovat)
+- vylepšeno zadávání data a èasu
+- upraven pøihlašovací formuláø
+- pøidány funkce pro výpoèet souøadnic z lokátoru a lokátoru ze souøadnic
+- upraven vzhled tiskové tabulky deníku
+- vytvoøena struèná nápovìda
+- pøidána mapa Evropy
+
+0.5.2 beta
+opravy:
+- opravena menší chyba v náhledu pøed tiskem
+- opravena chyba pøi tøídìní oznaèených spojení
+vylepšení:
+- pøidán seznam ostrovù IOTA
+- pøidán export pro odesílání eQSL
+- pøidán export do TXT souboru
+- tøídìní nálepek na QSL lístky v souladu s požadavky QSL služby
+
+0.5.4 beta
+opravy:
+- opraven pøepoèet souøadnic na lokátor a lokátoru na souøadnice
+- opraven výpoèet azimutu
+- opravena minimalizace programu
+vylepšení:
+- upraveno vstupní pole pro zadávání souøadnic pro pøepoèet
+- zvìtšena délka poznámky na 50 znakù
+- pøidáno tlaèítko pro vyvolání call booku na formuláøi nového spojení
+
+0.6.1 beta
+opravy:
+- import ADIf podporuje pole s udaným typem
+- zrušena funkce Grafy (k nièemu :))
+vylepšení:
+- podpora webového DxClusteru na serveru www.nagano.cz
+- možnost výbìru výkonu 1W
+- do výbìru pásma pøidány mikrovlny
+- RST nemusí obsahovat pouze èísla
+- podpora exteního deníku (napøíklad z programu PSK31 Deluxe)
+- vylepšena automatická záloha
+- statistika DXCC byla rozdìlena na KV a VKV
+- sestava velkých ètvercù je roztøídìna podle pásma
+- filtr dosažených ètvercù na mapì rozšíøen o pásma do 10GHz
+- nový systém filtrování databáze
+- vylepšeno vyhledávání pøedchozích spojení (rozpozná znaèku /P, /M ...)
+- pøidána funkce pro vyhledání DXCC zemì pro zadanou znaèku
+
+0.7.1 beta
+opravy:
+- nezávislé nastavení oddìlovacího znaku desetinných míst od Windows
+- opraveno pøepisování poznámky pøi importu z ADIFu
+- opraveno zadávání data ve filtru
+- opraven celkový souèet potvrzených zemí (lokátorù) ve statistice
+vylepšení:
+- propojení s CallBookem
+- formátování zemìpisných souøadnic v informacích u nového spojení
+- zobrazení celého názvu kontinentu v informacích u nového spojení
+- klávesová zkratka pro uložení spojení zmìnìna na Ctrl+Enter
+- pøidány další módy
+- funkce pro "offline" spojení (deaktivuje automatické vkládání data a èasu)
+- pøidána další klávesová zkratka pro prohlížení spojení - Enter
+- v seznamu pøedchozích spojení pøidán sloupec vlastního lokátoru
+- pøidáno blokování spoøièe obrazovky pøi zadávání nových spojení
+- kontrola duplicitních spojení pøi importu z formátu ADIF
+
+1.0.1 beta
+- po menších úpravách je to zcela nové stavení :D (teda alespoò uvnitø)
+opravy:
+- opraven import víceøádkových položek (M) ve formátu ADIF
+vylepšení:
+- možnost automatického zvìtšení poèáteèních písmen u jména a QTH
+- formátování data a èasu v møížce spojení
+- zdokonalen import
+- pøidána hromadná editace spojení
+- pøidáno pole pro kód IOTA
+- vylepšeny statistiky + pøidány další mikrovlná pásma a pásmo 135kHz
+- pøidána statistika IOTA, ITU, WAZ
+- možnost pøednastavení vlastních frekvencí
+- možnost vytvoøení vlastního seznamu módù
+- možnost editace zemì dxcc, zón ITU a WAZ u daného spojení (zatím ne seznamu DXCC)
+- vylepšeno vyhledávání
+- kompletnì pøedìlána mapa - pøidán celý svìt
+- upraveny fonty
+- automatická kontrola odchylky UTC
+- možnost synchronizace hodin s NTP serverem
+- plynulé posouvání deníku scrollbarem
+- automatické pøihlášení uživatele pøi startu pomocí parametru pøíkazového øádku
+- upravena záloha (nyní vše v jednom souboru)
+- pøidány další nálepky na QSL
+- pøidáno nastavení møížky s QSO (šíøka sloupcù, zobrazení/skrytí sloupcù)
+- upravena agenda QSL

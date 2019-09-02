@@ -1,0 +1,149 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+  <title>Delphi 7.0 ActionBands Update</title>
+</head>
+<basefont face="arial">
+<body>
+<table cellpadding=0 cellspacing=0 width="100%">
+<tr>
+<td>
+<b>
+<font size=4>
+Delphi 7.0<br>
+ActionBands Update<br>
+Release Notes
+</font></b>
+</td>
+<td valign="top" align="right">
+October 2002
+</td>
+</tr>
+</table>
+<hr>
+<p>
+This file update applies specifically to the ActionBands feature of Delphi 7.0 
+available in the Professional and Enterprise level products.  If you do not use the 
+ActionBands features of VCL then this update is unnecessary.
+
+<h4>IMPORTANT INFORMATION</h4>
+<ul>
+<li>This update <b>requires</b> that you already have Delphi 7.0 Professional or Enterprise installed.</li>
+<li>The update applies only to the ActionBands feature of VCL.</li>
+<li>No changes have been made to the interface section of any of the included units
+therefore the update maintains binary compatibility with other packages/DCU's </li>
+<li><strong>NEW!!</strong> component, TPopupActionBarEx that can be used to 
+replace existing TPopupMenu components to give them the same look and feel of 
+ActionBand menus.  If you have previously installed this component you should remove
+it from the palette prior to applying the patch.
+<strong><font color="red"><li>The ActionBand runtime package must be copied manually, do not
+forget this step otherwise you will run into errors starting the IDE</li></font> </strong>
+</ul>
+
+<h4>INSTALLING THE UPDATE</h4>
+These steps will apply the ActionBands patch to an existing install of Delphi 7.0.
+<ol>
+<li> If you previously installed TPopupActionBarEx you should remove that 
+component from the palette since it is inlcuded in the updated design-time package
+<li>Close Delphi if it is running and any other applications using the Delphi runtime packages</li>
+<li>Extract the files in the ActionBands.zip file to a temporary directory</li>
+<li>Run Update.exe (included in the zip file) from your temporary directory</li>
+<li>Select your Delphi 7.0 directory (for example \Program Files\Borland\Delphi7) as the directory to update</li>
+<li>Click the Browse button and select the file ActionBands.upd from your temp directory</li>
+<li>Click the Update button</li>
+<li>On the Update Completed dialog click OK</li>
+<li>Click the Close button to complete the automatic update</li>
+<strong><font color="red"><li>Locate in the windows system directory your copy of vclactnband70.bpl and replace it with the file included in this zip file.</font></strong></li>
+</ol>
+
+<h4>UNINSTALLING THE UPDATE</h4>
+This will restore all of the ActionBand related files back to the original Delphi 7.0 files.
+<ol>
+<li>Make sure you have Delphi 7.0 installed</li>
+<li>Close Delphi if it is running and any other applications using the Delphi runtime packages</li>
+<li>Insert your Delphi 7.0 CD into your CD-ROM drive
+<li>Run UndoABUpdate.bat (included in the zip file)</li>
+</ol>
+
+<h4>NEW ACTIONBAND POPUP MENU COMPONENT</h4>
+Delphi 7.0 did not ship with popup menu support for ActionBands and this component 
+serves to compliment the menu functionality by implementing ActionBand style 
+popup menus. TActionPopupMenu can be used as a replacement for TPopupMenu 
+when a consistent menu style is desired. With this component and using 
+ActionBands in Delphi 7 it is possible to develop applications that have a 
+complete Microsoft Office XP menu style. 
+
+<h4>WHERE TO FIND MORE INFORMATION</h4>
+For more information on ActionBands and other useful Delphi tips make sure
+to take a look at <a href="http://www.geocities.com/delphihelp">http://www.geocities.com/delphihelp</a> 
+or the mirror site at <a href="http://homepages.borland.com/strefethen">http://homepages.borland.com/strefethen</a>.
+<p>
+<b>Software used to create this update</b><br>
+Of interest may be the update application which is freeware Delphi code
+available here: <a href="http://www.tsppd.com/MakeUpdate/">http://www.tsppd.com/MakeUpdate/</a>
+
+<h4>LIST OF FIXES INCLUDED WITH THIS UPDATE</h4>
+<ul>
+  <li>Standard menu color scheme now correctly handles the flat menu style (see SPI_GETFLATMENU in MSDN).
+  <li>Fixed an issue regarding auto hotkey calculation.
+  <li>Fixed transparent painting problem for actionbands with background bitmaps.
+  <li>Fix an issue where the application hint wasn't being updated correctly.
+  <li>Fixed issues with TActionMainMenuBar not functioning correctly in MDI applications.
+  <li>Fixed issue with setting ActionBand popup menu colors correctly.
+  <li>Fixed F1 help on ActionBand menus.
+  <li>Fixed issue regarding ActionBand menus no longer respond to Ctrl-key combinations.
+  <li>Fixed problems related to positioning menus with Ctrl-arrow key combinations.
+  <li>Fixed menu items so they can be selected with the right mouse button.
+  <li>Fix to allow arrow keys to function within a menu even if the Alt key held down pressed.
+  <li>Fixed popup menu shadows not appearing on Windows 2000.
+  <li>Fixed Customize dialog to show actions from linked ActionLists correctly.
+  <li>Fixed TActionManager.AddSeparator method so separators get added correctly.
+  <li>Fixed a bug so that a submenus parent item is reselected if the mouse leaves the parent item but passes 
+      over the submenu before it closes.  
+  <li>Improved the drawing of the XP style menu buttons.
+  <li>Fixed bug in Standard style menu button paint logic.
+  <li>Fixed problems with TCustomizeActionBars action so that it will work even when it is not in a TActionManager 
+  but it's ActionManager property is assigned.
+  <li>Fixed drawing problems with dropdown buttons on TActionToolbar for both XP and Standard styles
+  <li>Fixed AV dragging a category over a menu item and then over a TActionToolBar
+</ul>
+
+<h4>LIST OF FILES MODIFIED BY THIS UPDATE</h4>
+<pre>
+vclactnband70.bpl
+bin\dclact70.map
+bin\dclact70.bpl
+lib\vclactnband70.dcp
+lib\dclact.dcp
+lib\actnman.dcu
+lib\actnctrls.dcu
+lib\actnmenus.dcu
+lib\stdactnmenus.dcu
+lib\CustomizeDlg.dcu
+lib\CustomizeDlg.dfm
+lib\XPActnCtrls.dcu
+lib\XPStyleActnCtrls.dcu
+lib\StdStyleActnCtrls.dcu
+lib\bandactn.dcu
+lib\debug\actnman.dcu
+lib\debug\actnctrls.dcu
+lib\debug\actnmenus.dcu
+lib\debug\stdactnmenus.dcu
+lib\debug\CustomizeDlg.dcu
+lib\debug\bandactn.dcu
+lib\debug\XPActnCtrls.dcu
+lib\debug\XPStyleActnCtrls.dcu
+lib\debug\StdStyleActnCtrls.dcu
+source\vcl\actnman.pas
+source\vcl\actnctrls.pas
+source\vcl\actnmenus.pas
+source\vcl\stdactnmenus.pas
+source\vcl\CustomizeDlg.pas
+source\vcl\CustomizeDlg.dfm
+source\vcl\bandactn.pas
+source\vcl\XPActnCtrls.pas
+source\vcl\XPStyleActnCtrls.pas
+source\vcl\StdStyleActnCtrls.pas
+</pre>
+</body>
+</html>
